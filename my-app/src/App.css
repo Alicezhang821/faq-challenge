@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "bold";
+  src: url("./KumbhSans-Bold.ttf");
+}
+@font-face {
+  font-family: "regular";
+  src: url("./KumbhSans-Regular.ttf");
+}
 .App {
   text-align: center;
 }
@@ -6,7 +14,85 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.question {
+  font-size: 12px;
+  font-family: regular;
+  transform: translate(15%, 0%);
+  text-align: left;
+  padding-top: 10px;
+  color: hsl(237, 12%, 33%);
+}
+.questionBold {
+  font-size: 12px;
+  font-family: regular;
+  transform: translate(15%, 0%);
+  text-align: left;
+  color: black;
+  font-weight: 700;
+}
+.Btn {
+  border: none;
+  background: none;
+}
+.Ans {
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+  width: 82%;
+  margin: 10px 0px 15px 0px;
+  opacity: 0.6;
+}
+hr {
+  border-top: 1px hsl(240, 6%, 50%);
+  width: 82%;
+  transform: translate(-12%, 0%);
+}
+.left {
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+  transform: translate(-20%, 10%);
+}
+.box {
+  width: 40%;
+  height: 25vh;
+  transform: translate(-75%, -225%);
+}
+.card {
+  border: 10px solid white;
+  border-radius: 25px;
+  text-align: center;
+  height: 50vh;
+  width: 60vw;
+  background-color: white;
+  min-height: 60vh;
+  margin: auto;
+  transform: translate(0, 35%);
+  display: flex;
+  z-index: -1;
+}
+.right {
+  height: 60vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  transform: translate(15%, 0%);
+  text-align: left !important;
+  width: 100%;
+}
+.bg {
+  height: 90%;
+  width: 60%;
+  transform: translate(-50%, -80%);
+  z-index: -2;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -21,7 +107,17 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+.question:hover {
+  color: hsl(14, 88%, 65%);
+}
+.down {
+  transform: rotate(180deg);
+  text-align: right;
+  align-content: right;
+  align-self: right;
+  float: right;
+  display: inline;
 }
 
 .App-link {
