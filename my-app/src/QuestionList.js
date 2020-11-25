@@ -16,7 +16,7 @@ class QuestionList extends Component {
   render() {
     return (
       <div className={this.state.hide ? "questionBold" : "question"}>
-        {this.props.text}
+        <p>{this.props.text}</p>
         <button className="Btn" onClick={this.handleClick}>
           <img src={arrow} className={this.state.hide ? "down" : "none"} />
         </button>
@@ -26,7 +26,6 @@ class QuestionList extends Component {
         >
           {this.props.answer}
         </div>
-        <hr />
       </div>
     );
   }
